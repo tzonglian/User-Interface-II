@@ -19,7 +19,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;  /*UNCOMMENT WHEN SUBMIT */
+    /*border: 0;  UNCOMMENT WHEN SUBMIT */
+    border: 1px solid black; /*COMMENT OUT BEFORE SUBMIT*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -115,6 +116,7 @@ h2{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    line-height: 2;
 }
 
 .profile-line1{
@@ -123,12 +125,21 @@ h2{
     justify-content: space-around;
 }
 
-#catOne,#catTwo,#catThree,#catFour, #catFive,#catSix,#catSeven,#catEight{
-    width: 20%;
+.catOne,.catTwo,.catThree,.catFour,.catFive,.catSix,.catSeven,.catEight{
+    max-width: 20%;
     border: 2.5px solid darkslategray; 
-
-
+    display:flex;
+    flex-direction:column;
 }
+
+#pic-subsect img{
+    max-height: 80%;
+}
+
+/* #pic-subsect p{
+    justify-content:center;
+    align-items:center;
+} */
 
 .profile-line2{
     display:flex;
