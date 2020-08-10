@@ -19,8 +19,8 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-    /*border: 0;  UNCOMMENT WHEN SUBMIT */
-    border: 1px solid black; /*COMMENT OUT BEFORE SUBMIT*/
+    border: 0;  /*UNCOMMENT WHEN SUBMIT */
+    /*border: 1px solid black; COMMENT OUT BEFORE SUBMIT*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -64,7 +64,6 @@ h1{
 nav{
     font-size: 2rem;
     margin: 1% 1% 1% 5%;
-    
 }
 
 a{
@@ -119,10 +118,11 @@ h2{
     line-height: 2;
 }
 
-.profile-line1{
+.profile-line1, .profile-line2{
     display:flex;
     text-align:center;
     justify-content: space-around;
+    margin: 2.5% 0%;
 }
 
 .catOne,.catTwo,.catThree,.catFour,.catFive,.catSix,.catSeven,.catEight{
@@ -134,12 +134,6 @@ h2{
 
 #pic-subsect img{
     max-height: 80%;
-}
-.profile-line2{
-    display:flex;
-    text-align:center;
-    justify-content: space-around;
-    margin: 2.5% 0%;
 }
 
 /* Footer */
@@ -163,10 +157,55 @@ footer p{
     }
     #pic-subsect{
         font-size: 1.5rem;
-
+    }
 }
 
 /* Styles for phone at 500px */
 @media (max-width: 500px){
-  
+    /*Header Section*/
+    header{
+        align-items:center;
+        padding-bottom: 4%;
+    }
+    nav{
+        margin: 1%; /* Reset the margin */
+        display:flex;
+        flex-direction:column;
+        width: 30%;
+    }
+    nav a{
+        text-align:center;
+        padding: 5% 10%; /*Add spacing to left/right of button text*/
+    }
+    /*Main Section-Intro*/
+    #intro-subsect{
+        flex-direction:column;
+    }
+    #main-pic{
+        width:90%;
+    }
+    #intro-txt{
+        width: 90%;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 5%; 
+        font-size: 1.8rem;
+        line-height:2; 
+    }
+    #intro-txt p{
+        line-height: 1.5;
+    }
+
+    /*Main Section-Pics*/
+    .profile-line1, .profile-line2 {
+        flex-wrap: wrap;
+        margin:0;
+    }
+    .catOne,.catTwo,.catThree,.catFour,.catFive,.catSix,.catSeven,.catEight{
+        max-width: 40%;
+        display:flex;
+        flex-direction:column;
+    }
+    
 }
