@@ -135,12 +135,6 @@ h2{
 #pic-subsect img{
     max-height: 80%;
 }
-
-/* #pic-subsect p{
-    justify-content:center;
-    align-items:center;
-} */
-
 .profile-line2{
     display:flex;
     text-align:center;
@@ -160,4 +154,19 @@ footer{
 footer p{
     font-size: 2rem;
     color:whitesmoke;
+}
+
+/* Styles for tablet at 800px */
+@media (max-width:800px){
+    #intro-txt{
+        font-size: 1.5rem;
+    }
+    #pic-subsect{
+        font-size: 1.5rem;
+
+}
+
+/* Styles for phone at 500px */
+@media (max-width: 500px){
+  
 }
