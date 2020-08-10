@@ -70,9 +70,10 @@ a{
     margin: 2%;
     border: 1px solid whitesmoke; 
     border-radius: 5px;
-    padding: .5rem;
+    padding: .5rem 2%;
     background-color: cadetblue;
     color: azure;
+
 }
 
 /* Main Section - Intro */
@@ -99,6 +100,7 @@ section{
     font-size: 1.8rem;
     line-height:1.5;
 }
+
 h2{
     font-size: 3rem;
     font-variant:small-caps;
@@ -189,7 +191,7 @@ footer p{
         display:flex;
         flex-direction: column;
         text-align: center;
-        margin: 5%; 
+        margin: 0 5% 5% 5%; 
         font-size: 1.8rem;
         line-height:2; 
     }
@@ -208,4 +210,42 @@ footer p{
         flex-direction:column;
     }
     
+}
+
+/* STRETCH GOAL #1 */
+/* Styles for phone at 360x640 (iPhone)*/
+@media (max-width: 360px){
+    /*Header Section*/
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+}
+/* Styles for laptop at 1366x768 (laptop)*/
+    /* no changes needed */
+
+/* Styles for widescreen at 1920x1080 */
+@media (min-width: 1080px){
+    h1{
+        font-size: 6rem;
+    }
+    nav a{
+        font-size: 3rem;
+    }
+    #intro-txt h2{
+        font-size: 5rem;
+    }
+    #intro-txt a{
+        font-size: 3rem;
+    }
+    #intro-txt p{
+        font-size: 2.5rem;
+    }
+    #pic-subsect{
+        font-size: 3rem;
+    }
 }
