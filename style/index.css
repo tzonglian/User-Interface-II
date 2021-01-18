@@ -1,1 +1,251 @@
-/* Add CSS styling here */
+/* Option 1 Wireframe Layout */
+
+/* Imported Font */
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+
+/* CSS Reset (Meyer) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+    border: 0;  /*UNCOMMENT WHEN SUBMIT */
+    /*border: 1px solid black; COMMENT OUT BEFORE SUBMIT*/
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Styling Defaults */
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    border:1px solid gray;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:2rem;
+    color: darkslategray;
+    font-family: 'Recursive', sans-serif;
+    line-height: 1.2;
+}
+a{
+    text-decoration:none;
+}
+
+
+/* Header Section */
+header{
+    background-color:darkslategray;
+    color: whitesmoke;
+    padding: 1.5% 0;
+    display:flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 4rem;
+    font-variant:small-caps;
+    margin: 2.5% 2.5% 1.25% 2.5%;
+}
+
+nav{
+    font-size: 2rem;
+    margin: 1% 1% 1% 5%;
+}
+
+a{
+    margin: 2%;
+    border: 1px solid whitesmoke; 
+    border-radius: 5px;
+    padding: .5rem 2%;
+    background-color: cadetblue;
+    color: azure;
+
+}
+
+/* Main Section - Intro */
+section{
+    background-color:whitesmoke;
+}
+
+#intro-subsect{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#main-pic{
+    width:45%;
+    margin:2.5%;
+}
+
+#intro-txt{
+    width: 45%;
+    display:flex;
+    flex-direction: column;
+    align-content: flex-end; 
+    margin: 10% 5% 1% 5%;
+    font-size: 1.8rem;
+    line-height:1.5;
+}
+
+h2{
+    font-size: 3rem;
+    font-variant:small-caps;
+    margin-left: 2.5%;
+}
+
+#intro-txt p{
+    margin: 2.5%;
+}
+
+/* Main Section - Pic */
+
+#pic-subsect{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    line-height: 2;
+}
+
+.profile-line1, .profile-line2{
+    display:flex;
+    text-align:center;
+    justify-content: space-around;
+    margin: 2.5% 0%;
+}
+
+.catOne,.catTwo,.catThree,.catFour,.catFive,.catSix,.catSeven,.catEight{
+    max-width: 20%;
+    border: 2.5px solid darkslategray; 
+    display:flex;
+    flex-direction:column;
+}
+
+#pic-subsect img{
+    max-height: 80%;
+}
+
+/* Footer */
+footer{
+    background-color:darkslategray;
+    color:whitesmoke;
+    padding: 5%;
+    text-align: center;
+    line-height:2;
+}
+
+footer p{
+    font-size: 2rem;
+    color:whitesmoke;
+}
+
+/* Styles for tablet at 800px */
+@media (max-width:800px){
+    #intro-txt{
+        font-size: 1.5rem;
+    }
+    #pic-subsect{
+        font-size: 1.5rem;
+    }
+}
+
+/* Styles for phone at 500px */
+@media (max-width: 500px){
+    /*Header Section*/
+    header{
+        align-items:center;
+        padding-bottom: 4%;
+    }
+    nav{
+        margin: 1%; /* Reset the margin */
+        display:flex;
+        flex-direction:column;
+        width: 30%;
+    }
+    nav a{
+        text-align:center;
+        padding: 5% 10%; /*Add spacing to left/right of button text*/
+    }
+    /*Main Section-Intro*/
+    #intro-subsect{
+        flex-direction:column;
+    }
+    #main-pic{
+        width:90%;
+    }
+    #intro-txt{
+        width: 90%;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 5% 5% 5%; 
+        font-size: 1.8rem;
+        line-height:2; 
+    }
+    #intro-txt p{
+        line-height: 1.5;
+    }
+
+    /*Main Section-Pics*/
+    .profile-line1, .profile-line2 {
+        flex-wrap: wrap;
+        margin:0;
+    }
+    .catOne,.catTwo,.catThree,.catFour,.catFive,.catSix,.catSeven,.catEight{
+        max-width: 40%;
+        display:flex;
+        flex-direction:column;
+    }
+    
+}
+
+/* STRETCH GOAL #1 */
+/* Styles for phone at 360x640 (iPhone)*/
+@media (max-width: 360px){
+    /*Header Section*/
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    nav a{
+        font-size: 1.5rem;
+    }
+}
+/* Styles for laptop at 1366x768 (laptop)*/
+    /* no changes needed */
+
+/* Styles for widescreen at 1920x1080 */
+@media (min-width: 1080px){
+    h1{
+        font-size: 6rem;
+    }
+    nav a{
+        font-size: 3rem;
+    }
+    #intro-txt h2{
+        font-size: 5rem;
+    }
+    #intro-txt a{
+        font-size: 3rem;
+    }
+    #intro-txt p{
+        font-size: 2.5rem;
+    }
+    #pic-subsect{
+        font-size: 3rem;
+    }
+}
