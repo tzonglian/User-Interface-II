@@ -1,4 +1,4 @@
-## Demo portfolio website, using secret agent cats!
+## Demo portfolio website using html/css, with secret agent cats!
 Deployed here: https://kittyops.netlify.app/
 
 Images: https://unsplash.com/ <br>
